@@ -43,6 +43,49 @@ const tenis = [
         estoque: 5,
     },
     {
-        
-    }
-]
+        marca: 'Puma',
+        modelo: 'RS-X',
+        cor: 'azul',
+        tamanho: [39, 40, 42],
+        preco: 399.99,
+        estoque: 8,
+    },
+    {
+        marca: 'Reebok',
+        modelo: 'Classic',
+        cor: 'cinza',
+        tamanho: [38, 39, 40],
+        preco: 299.99,
+        estoque: 12,
+    },
+
+];
+
+
+for (let i = 0; i < tenis.length; i++) {
+  tenis[i].estoque - 1;
+}
+
+    for (let i = 0; i < tenis.length; i++) {
+  if (tenis[i].marca === 'Reebok' && tenis[i].modelo === 'Classic') {
+    tenis[i].preco = 399.99; 
+  }
+}
+
+    for (let i = 0; i < tenis.length; i++) {
+  if (tenis[i].marca === 'Puma' && tenis[i].modelo === 'RS-X') {
+    tenis[i].preco = 299.99; 
+  }
+}
+
+    for (let i = 0; i < tenis.length; i++) {
+  if (tenis[i].marca === 'Nike' && tenis[i].modelo === 'Air Max'){
+    tenis[i].tamanho[tenis[i].tamanho.length] = 45
+  }
+}
+
+console.log(tenis);
+
+
+
+     
